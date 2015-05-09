@@ -31,7 +31,7 @@
      
        org/postgresql/main/module.xml
      
-       ```xml:
+       ```xml
        <?xml version="1.0" encoding="UTF-8"?>
        <module xmlns="urn:jboss:module:1.0" name="org.postgresql">
            <resources>
