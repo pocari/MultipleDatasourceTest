@@ -17,7 +17,6 @@ public class IndexController {
     @RequestMapping("/")
     @ResponseBody
     public String index() throws Exception {
-//        return "hoge";
        return indexService.doService();
     }
 }
