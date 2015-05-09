@@ -5,14 +5,12 @@ import javax.sql.DataSource;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.lookup.JndiDataSourceLookup;
 
 @Configuration
 public class DatasourceConfig {
     @Bean(name="ds1")
-    @Primary
     public DataSource ds1() {
         DataSource dataSource = createJndiDataSourceBy("java:/jdbc/XAds1");
         return dataSource;
