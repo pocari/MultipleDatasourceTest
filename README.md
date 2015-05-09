@@ -22,7 +22,7 @@
            +- org
               +- postgresql
                 +- main
-           |      +- module.xml
+           　      +- module.xml
                   +- postgresql-9.2-1003-jdbc4.jar
       ```
 
