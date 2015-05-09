@@ -41,7 +41,7 @@ public class DatasourceConfig {
         DataSource dataSource = dataSourceLookup.getDataSource(jndiName);
         return dataSource;
     }
-    @Bean(name = "transactionManager")
+    @Bean
     public PlatformTransactionManager transactionManager() {
         JtaTransactionManager tm = new JtaTransactionManager();
         return tm;
