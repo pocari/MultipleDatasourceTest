@@ -64,7 +64,7 @@
        ```sh
        [disconnected /] connect
        [standalone@localhost:9990 /] /subsystem=datasources/jdbc-driver=oracle:add(driver-name=oracle,driver-module-name=oracle.jdbc,driver-xa-datasource-class-name=oracle.jdbc.xa.client.OracleXADataSource) 
-       [standalone@localhost:9990 /] /subsystem=datasources/jdbc-driver=postgresql:add(driver-name=postgresql,driver-module-name=postgresql.jdbc,driver-xa-datasource-class-name=org.postgresql.xa.PGXADataSource) 
+       [standalone@localhost:9990 /] /subsystem=datasources/jdbc-driver=postgresql:add(driver-name=postgresql,driver-module-name=org.postgresql,driver-xa-datasource-class-name=org.postgresql.xa.PGXADataSource)
        ```
        
        - ${JBOSS_HOME}/standalone/configuration/standalone.xmlファイルにDatasourceの設定を追加
