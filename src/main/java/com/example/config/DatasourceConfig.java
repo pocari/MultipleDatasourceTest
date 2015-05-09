@@ -8,8 +8,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.lookup.JndiDataSourceLookup;
-import org.springframework.transaction.PlatformTransactionManager;
-import org.springframework.transaction.jta.JtaTransactionManager;
 
 @Configuration
 public class DatasourceConfig {
@@ -41,9 +39,5 @@ public class DatasourceConfig {
         DataSource dataSource = dataSourceLookup.getDataSource(jndiName);
         return dataSource;
     }
-    @Bean
-    public PlatformTransactionManager transactionManager() {
-        JtaTransactionManager tm = new JtaTransactionManager();
-        return tm;
-    }
+
 }
